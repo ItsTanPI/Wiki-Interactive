@@ -847,10 +847,10 @@ $(document).ready(function()
         var te = e.originalEvent.changedTouches[0].clientX;
         if (ts > te) 
         {
-            Camera(0.3);
+            Camera(0.4);
         } else 
         {
-            Camera(-0.3);
+            Camera(-0.4);
         }
     });
 });
