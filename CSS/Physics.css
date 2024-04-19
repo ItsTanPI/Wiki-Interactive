@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+@font-face 
+{
+    font-family: "Jupiteroid";
+    src: url("../Assets/Fonts/Jupiteroid-Regular.woff") format('woff');
+}
+
+/*--------------------------------------------------------------Inside----------------------------------------------------------------*/
+.DisplayBoxBG
+{
+    position: absolute;
+    height: 80vh;
+    width: 80vw;
+    color: white;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(0, 0, 255, 0.2));
+    background-size: 150% 150%;
+    backdrop-filter: blur(10px);
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    clip-path: polygon(
+        0% 0%, 
+        100% 0%, 
+        100% 100%, 
+        0px 100%,
+        0px 0px,
+        20px 20px,
+        20px calc(100% - 20px), 
+        calc(100% - 20px) calc(100% - 20px), 
+        calc(100% - 20px) 20px, 
+        20px 20px
+    );
+    z-index: 12;
+    animation: gradient 2s infinite;
+}
+
+.DisplayBox
+{
+    padding: 20px;
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    color: white;
+    background-color: rgba(100, 100, 100, 0);
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 200, 0.3) 50%, rgba(255, 255, 255, 0.2) 100%);
+    background-size: 400% 400%; animation: gradient 30s linear infinite;*/
+    backdrop-filter: blur(50px);
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    overflow:auto;
+    z-index: 10;
+}
+
+.close
+{
+    position:absolute;
+    left: calc(100% - 20px);
+    top: calc(0% + 20px);;
+    background-color: rgba(255, 0, 0, 0.3);
+    height: 70px;
+    width: 70px;
+    translate: -100% 0;
+    border-radius: 0% 0% 0% 50%;
+}
+
+.PlanetTitle
+{
+    overflow:auto;
+    background-color: rgba(0, 0, 255, 0.0);
+    position: relative;
+    font-size: 5vmin;
+    height: 7em;
+}
+
+.PlanetsPic
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top:50%;
+    left: 10%;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    translate: 0% -50%;
+}
+
+.PlanetsPicSaturn
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    top:50%;
+    left: 10%;
+    translate: -0% 0;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    translate: 0% -50%;
+}
+
+
+
+.PlanetInfo
+{
+    background-color: rgba(255, 0, 0, 0.0);
+    position: absolute;
+    width: 55%;
+    height: 80%;
+    top: 15%;
+    left: 40%;
+}
+
+.Content
+{
+    font-size: 1.75vmax;
+    background-color: rgba(140, 0, 100, 0.0);
+    margin: 10;
+    position: relative;
+    padding: 30px;
+    text-align: justify;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+.MoveBox
+{
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.0);
+    backdrop-filter: blur(20px);
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    overflow:auto;
+    z-index:21;
+    user-select: none;
+    margin-left: 0px;
+    pointer-events: none;
+    /* clip-path: polygon(
+        0% 0%, 
+        100% 0%, 
+        100% 100%, 
+        0px 100%,
+        0px 0px,
+        20px 20px,
+        20px calc(100% - 20px), 
+        calc(100% - 20px) calc(100% - 20px), 
+        calc(100% - 20px) 20px, 
+        20px 20px
+    ); */
+    opacity: 100%;  
+}
+
+.MoveBoxBorder
+{
+    padding: 20px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    /* background-color: rgba(200, 200, 200, 0.3); */
+    /* background: linear-gradient(-45deg, rgba(0, 0, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(0, 0, 255, 0.3)); */
+    background-image: url("../Assets/Images/Movie_056.gif");
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    overflow:auto;
+    z-index: -101;
+    user-select: none;
+    margin-left: 0px;
+    pointer-events: none;
+    /* clip-path: polygon(
+        0% 0%, 
+        100% 0%, 
+        100% 100%, 
+        0px 100%,
+        0px 0px,
+        20px 20px,
+        20px calc(100% - 20px), 
+        calc(100% - 20px) calc(100% - 20px), 
+        calc(100% - 20px) 20px, 
+        20px 20px
+    ); */
+    /* animation: gradient 2s infinite; */
+    opacity: 100%;
+}
+
+
+.PlanetNameTag
+{
+    height:8vmax;
+    user-select: none;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.0);
+    backdrop-filter: blur(5px);
+    margin-left: 0px;
+    position: fixed; 
+    translate: -50% -50%;
+    z-index: 5;
+    color: white;
+    pointer-events: none;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: hidden; /* Enable vertical scrolling if needed */
+}
+
+
+.hand
+{
+    rotate: 30deg;
+    animation: Wave 1.5s ease-in-out infinite;
+
+}
+
+@keyframes Wave 
+{
+    0%
+    {
+        rotate: 30deg;
+    }
+    50%
+    {
+        rotate: 45deg;
+    }
+    100%
+    {
+        rotate: 30deg;
+    }
+}
+
+
+@keyframes gradient 
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+.Screen
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+}
+
+::-webkit-scrollbar 
+{
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-track 
+{
+    background: rgba(0, 0, 0, 0); 
+}

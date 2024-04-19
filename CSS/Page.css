@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after
+{
+	padding: 0;
+	margin: 0;
+	
+}
+
+.Header
+{
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.3);	
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    font-size: 50px;
+	border-radius: 10px;
+}
+
+.BG
+{
+	/*background-image: url("../Assets/Images/BG.png");	
+    background-size: cover;
+    */
+	background-color:#0B0425;
+    /* background-color:#000000; */
+    
+}
+
+.clk
+{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid black;
+    translate: -50% -50%;
+
+    
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+
+.clk1
+{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    font-size: 30px;
+    translate: -50% -50%;
+}
+
+
+/*------------menu nav bar----------------------*/
+  
+.wrapper
+{
+    position: relative;
+    top: 2vh;
+    left: 10;
+    height: 100;
+}
+        
+.nav div 
+{
+    height: 7px;
+    /*width: 50px;*/
+    background-color: rgb(6, 6, 6);
+    margin: 5px 0;
+    border-radius: 35px;
+    transition: 0.3s;
+}
+
+.nav 
+{
+    width:50px;
+    height: 50px;
+    display: block;
+}
+
+.one
+{
+    width: 50px;
+}
+
+.two
+{
+    width: 40px;
+}
+
+.three
+{
+    width: 50px;
+}
+
+.nav:hover div 
+{
+    width: 50px;
+}
+
