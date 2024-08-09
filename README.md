@@ -24,3 +24,7 @@ As a passionate game developer, I've integrated several game development techniq
 - **Parallax Scrolling**: Creates a depth illusion as you scroll through the page.
 - **Optimized Object Rendering**: Efficiently manages multiple objects on the screen, ensuring smooth performance.
 - **Interactive Elements**: Enhances user engagement with responsive and dynamic content.
+
+## Contributing
+
+Feel free to fork the repository, create a branch, and submit pull requests. Contributions are welcome!
