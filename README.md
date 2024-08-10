@@ -25,6 +25,10 @@ As a passionate game developer, I've integrated several game development techniq
 - **Optimized Object Rendering**: Efficiently manages multiple objects on the screen, ensuring smooth performance.
 - **Interactive Elements**: Enhances user engagement with responsive and dynamic content.
 
+### Asset Credits
+This project uses assets from the following sources:
+- **Kenney Assets**: Various assets used in this project are provided by [Kenney.nl](https://kenney.nl/assets). Special thanks to Kenney for making these resources available.
+
 ## Contributing
 
 Feel free to fork the repository, create a branch, and submit pull requests. Contributions are welcome!
